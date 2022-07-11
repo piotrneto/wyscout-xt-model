@@ -31,7 +31,7 @@ The Wyscout pitch event coordinate system:
 
 ## Results
 
-Example model trained on event from England's Premier League season 2017/2018:
+Example model trained on events from England's Premier League season 2017/2018:
 
 ![England's Premier League season 2017/2018](plots/xt_grid_England.png)
 
