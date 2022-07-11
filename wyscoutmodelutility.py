@@ -229,7 +229,7 @@ def compute_xt_matrix(n,
                       transition_prob_matrix_wrapper):
     # n is the number of iterations
     if (n==0):
-        return np.zeros((20,20))
+        return np.zeros((x_bin_size,y_bin_size))
     
     if (n==1):
         return (shot_prob_matrix * goal_prob_matrix)
