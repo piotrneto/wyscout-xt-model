@@ -4,9 +4,12 @@ Created on Wed Jul  6 10:58:37 2022
 
 @author: Piotr Neto
 
+Main module which orchestrates creation model creation and outputs
+
 Expected Threat Wyscout model based on Karun Singh's xT algorithm: https://karun.in/blog/expected-threat.html
 Wyscout Dataset: https://www.nature.com/articles/s41597-019-0247-7
 Wyscout Events data description: https://support.wyscout.com/matches-wyid-events
+
 """
 
 #%% IMPORTS
@@ -203,7 +206,7 @@ pp.show_plt_grid_values(ax,
                         PITCH_X_LENGTH, 
                         PITCH_Y_WIDTH)
 pp.show_plt_pitch_dir_arrow(ax)
-plt.savefig('plots/goal_prob_grid' + str(LEAGUE_COUNTRY) + '.png', bbox_inches='tight')
+plt.savefig('plots/goal_prob_grid_' + str(LEAGUE_COUNTRY) + '.png', bbox_inches='tight')
 
 #%% PLOT MOVE PROBABILITY
 (fig,ax) = pp.plot_pitch(PITCH_X_LENGTH, PITCH_Y_WIDTH)
@@ -215,7 +218,7 @@ fig.supxlabel('League: ' + str(LEAGUE_COUNTRY) + ', 2017/2018 ' + ', Grid size: 
 
 pp.show_plt_grid_values(ax, move_prob_matrix.T, X_BIN_SIZE, Y_BIN_SIZE, PITCH_X_LENGTH, PITCH_Y_WIDTH)
 pp.show_plt_pitch_dir_arrow(ax)
-plt.savefig('plots/move_prob_grid' + str(LEAGUE_COUNTRY) + '.png', bbox_inches='tight')
+plt.savefig('plots/move_prob_grid_' + str(LEAGUE_COUNTRY) + '.png', bbox_inches='tight')
 
 #%% PLOT SHOT PROBABILITY GRID
 (fig,ax) = pp.plot_pitch(PITCH_X_LENGTH, PITCH_Y_WIDTH)
@@ -227,7 +230,7 @@ fig.supxlabel('League: ' + str(LEAGUE_COUNTRY) + ', 2017/2018 ' + ', Grid size: 
 
 pp.show_plt_grid_values(ax, shot_prob_matrix.T, X_BIN_SIZE, Y_BIN_SIZE, PITCH_X_LENGTH, PITCH_Y_WIDTH)
 pp.show_plt_pitch_dir_arrow(ax)
-plt.savefig('plots/shot_prob_grid' + str(LEAGUE_COUNTRY) + '.png', bbox_inches='tight')
+plt.savefig('plots/shot_prob_grid_' + str(LEAGUE_COUNTRY) + '.png', bbox_inches='tight')
 
 #%% PLOT TRANSITION PROBABILITY GRID FOR A GIVEN CELL
 
@@ -247,7 +250,7 @@ currentCell.set_alpha(.8)
 ax.add_patch(currentCell)
 pp.show_plt_grid_values(ax, transition_prob_matrix_wrapper[X-1][Y-1].T, X_BIN_SIZE, Y_BIN_SIZE, PITCH_X_LENGTH, PITCH_Y_WIDTH)
 pp.show_plt_pitch_dir_arrow(ax)
-plt.savefig('plots/transition_prob_grid' + str(LEAGUE_COUNTRY) + '.png', bbox_inches='tight')
+plt.savefig('plots/transition_prob_grid_' + str(LEAGUE_COUNTRY) + '.png', bbox_inches='tight')
 
 #%% PLOT EXPECTED THREAT (xT)
 (fig,ax) = pp.plot_pitch(PITCH_X_LENGTH, PITCH_Y_WIDTH)
@@ -259,4 +262,4 @@ fig.supxlabel('League: ' + str(LEAGUE_COUNTRY) + ', 2017/2018 ' + ', Grid size: 
 
 pp.show_plt_grid_values(ax, xt_matrix.T, X_BIN_SIZE, Y_BIN_SIZE, PITCH_X_LENGTH, PITCH_Y_WIDTH)
 pp.show_plt_pitch_dir_arrow(ax)
-plt.savefig('plots/xt_grid' + str(LEAGUE_COUNTRY) + '.png', bbox_inches='tight')
+plt.savefig('plots/xt_grid_' + str(LEAGUE_COUNTRY) + '.png', bbox_inches='tight')

@@ -8,6 +8,7 @@ Helper functions to compute Expected Threat model using static Wyscout data.
 
 Model based on Karun Singh's xT algorithm: https://karun.in/blog/expected-threat.html
 
+
 """
 
 
