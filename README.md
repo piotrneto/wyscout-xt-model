@@ -1,7 +1,7 @@
 # Expected threat (xT) model based on Wyscout data
 These Python modules implement an interpretation of the Expected Threat (xT) model as described by [Karun Sing (2018)](https://karun.in/blog/expected-threat.html) and are designed to be used on Wyscout data.
 
-Except for just implementing a working code for creating and running the models, emphasis has been put on making the application "modular" by breaking down the subcomponents of the xT formula as separate functions in a way which enables better readability (e.g clearer representation of the xT formula in the code), changeability (e.g paramater configuration), usability (e.g produce other models like xG, move prob etc) and analyzeability (e.g see the underlying calculations and values of the model outputs).
+Except for just implementing a working code for creating and running the models, emphasis has been put on making the application "modular" by breaking down the subcomponents of the xT formula as separate functions in a way which enables better readability (e.g clearer representation of the xT formula in the code), changeability (e.g parameter configuration), usability (e.g produce other models like xG, move prob etc) and analyzeability (e.g see the underlying calculations and values of the model outputs).
 
 This project has been implemented for learning purposes and as a first step for me to engage and contribute to the Football analytics community. I'm open to any feedback on this implementation!
 
