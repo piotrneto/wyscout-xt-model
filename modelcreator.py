@@ -4,7 +4,7 @@ Created on Wed Jul  6 10:58:37 2022
 
 @author: Piotr Neto
 
-Main module which orchestrates creation model creation and outputs
+Main module which orchestrates model creation and outputs
 
 Expected Threat Wyscout model based on Karun Singh's xT algorithm: https://karun.in/blog/expected-threat.html
 Wyscout Dataset: https://www.nature.com/articles/s41597-019-0247-7
