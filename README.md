@@ -27,7 +27,7 @@ The Wyscout pitch event coordinate system:
     - teams
 2. Place the data files (jsons) in a new folder named `wyscoutdata` on the same level as the root folder (`wyscout-xt-model`) as indicated by the `load_*_data()` functions in the `wyscoutmodelutlity.py` module, or just change to any other path that you prefer.
 3. Run the entire `modelcreator.py` to produce all the script outputs or run individual sections (cells) of the script to produce specific outputs.
-4. Play around by changing different model parameter values in the code (UPPERCASE_VARIABLES).
+4. Play around by changing different model parameter values (UPPERCASE_VARIABLES) in the code.
 
 ## Results
 
